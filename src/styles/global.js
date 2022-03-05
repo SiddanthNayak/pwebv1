@@ -41,7 +41,13 @@ body {
     margin: 0em auto 1em auto;
     padding: 1em 2em;
     max-width: 320px;
+    border-radius: var(--border-radius);
 }
+.cardComponent:hover{
+        cursor: pointer;
+        box-shadow: 0 10px 30px -15px var(--navy-shadow);
+        transform: translateY(-7px);
+    }
 .projectTitle{
     margin:0;
     font-size: large;

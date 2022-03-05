@@ -28,9 +28,8 @@ const StyledText = styled.div`
 `;
 
 const StyledCardComponent = styled.div`
-    .cardComponent:hover{
-        cursor: pointer;
-        box-shadow: 0.5em -0.5em 1.5em var(--dark-navy)
+    .cardComponent{
+        transition: var(--transition);
     }
     .projectDesc{
         font-weight: 400;
