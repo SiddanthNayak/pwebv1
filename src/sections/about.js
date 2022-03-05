@@ -10,6 +10,17 @@ const StyledText = styled.div`
 
 `;
 
+const StyledPic = styled.div`
+    display: flex;
+    justify-content: center;
+.img{
+    @media (max-width: 600px){
+    width: 150px;
+    height: 150px
+}
+}
+`;
+
 class About extends Component {
   render() {
     return (
@@ -24,6 +35,9 @@ class About extends Component {
                 </p>
                 <p> Apart from my skills and Experience, I am an avid reader, gamer, and swimmer. I love swimming and consider myself to be a Thalassophile.</p>
             </StyledText>
+            <StyledPic>
+                <img className="img" src={require('./profileHeadshot.jpg')} alt='Headshot'/>
+            </StyledPic>
         </StyledAboutSection>
       
     )

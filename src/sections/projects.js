@@ -32,6 +32,10 @@ const StyledCardComponent = styled.div`
         cursor: pointer;
         box-shadow: 0.5em -0.5em 1.5em var(--dark-navy)
     }
+    .projectDesc{
+        font-weight: 400;
+        color: var(--slate);
+    }
 `;
 
 class Projects extends Component {
@@ -59,7 +63,7 @@ class Projects extends Component {
                         <a href="https://www.frontendmentor.io/challenges/four-card-feature-section-weK1eFYK" rel ='noopener noreferrer' target='_blank'>FrontEndMentor Challenge</a>
                     </p>
                     <p className="projectDesc">
-                        FrontEdn Mentor Challenge featuring a static one-page responsive website containing four cardes developed using CSS Flexbox.
+                        FrontEnd Mentor Challenge featuring a static one-page responsive website containing four cardes developed using CSS Flexbox.
                     </p>
                 </div>
                 <div className ='cardComponent'>
@@ -70,7 +74,7 @@ class Projects extends Component {
                         <a href="https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U"  rel ='noopener noreferrer'  target = '_blank'>FrontEndMentor Challenge</a>
                     </p>
                     <p className="projectDesc">
-                        FrontEdn Mentor Challenge featuring a static one-page responsive website containing a NFT preview component card built using CSS Flexbox.
+                        FrontEnd Mentor Challenge featuring a static one-page responsive website containing a NFT preview component card built using CSS Flexbox.
                     </p>
                 </div>
                 <div className ='cardComponent'>
@@ -81,7 +85,7 @@ class Projects extends Component {
                         <a href="https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62"  rel ='noopener noreferrer'  target = '_blank'>FrontEndMentor Challenge</a>
                     </p>
                     <p className="projectDesc">
-                        FrontEdn Mentor Challenge featuring a static one-page responsive website containing a stats preview card component built using CSS Flexbox.
+                        FrontEnd Mentor Challenge featuring a static one-page responsive website containing a stats preview card component built using CSS Flexbox.
                     </p>
                 </div>
                 <div className ='cardComponent'>
@@ -92,7 +96,7 @@ class Projects extends Component {
                         <a href="https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX"  rel ='noopener noreferrer'  target = '_blank'>FrontEndMentor Challenge</a>
                     </p>
                     <p className="projectDesc">
-                        FrontEdn Mentor Challenge featuring a responsive website app to calculate tip and total bill amount based on bill, tip percentage and number of people as input.
+                        FrontEnd Mentor Challenge featuring a responsive website app to calculate tip and total bill amount based on bill, tip percentage and number of people as input.
                     </p>
                 </div>
             </StyledCardComponent>
