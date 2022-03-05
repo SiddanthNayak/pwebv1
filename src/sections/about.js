@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 const StyledAboutSection = styled.section`
     max-width: 900px;
-    margin: 0 auto;
+    /* margin: 0 auto; */
 `;
 
 const StyledText = styled.div`
