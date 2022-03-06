@@ -4,6 +4,7 @@ import Nav from './components/nav'
 import {GlobalStyle} from './styles/global'
 import About from './sections/about';
 import Projects from './sections/projects';
+import Contact from './sections/contact';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <main>
         <About />
         <Projects />
+        <Contact />
       </main>
     </div>
   );
