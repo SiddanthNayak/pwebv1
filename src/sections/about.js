@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import styled from 'styled-components'
 
 const StyledAboutSection = styled.section`
-    margin: 10em 0em;
+    margin: 10em auto;
 `;
 
 const StyledText = styled.div`
