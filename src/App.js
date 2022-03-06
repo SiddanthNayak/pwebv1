@@ -5,6 +5,7 @@ import {GlobalStyle} from './styles/global'
 import About from './sections/about';
 import Projects from './sections/projects';
 import Contact from './sections/contact';
+import Hero from './sections/hero';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Nav />
       </nav>
       <main>
+        <Hero />
         <About />
         <Projects />
         <Contact />

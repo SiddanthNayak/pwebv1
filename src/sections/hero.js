@@ -1,22 +1,36 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
 
-const StyledAboutSection = styled.section`
-    max-width: 900px;
-    margin: 0 auto;
+const StyledHeroSection = styled.section`
+
+    margin: 10em 2em;
+    
+    h1{
+        margin-top: .25em;
+    }
+    .intro{
+        color: var(--green);
+        margin: 0em;
+        line-height: 1.1;
+        font-weight: 400;
+    }
 `;
 
 
 
-class About extends Component {
+class Hero extends Component {
   render() {
     return (
-        <StyledAboutSection id="about">
-            <h2 className = "heading">About Me</h2>
-        </StyledAboutSection>
+        <StyledHeroSection id="heroSection" className='StyledSection'>
+            <p className='intro'>Hi, my name is</p>
+            <h1 className = "hero">Siddanth Nayak</h1>
+            <p>I am a Computer Science Engineering Gradtuate and I like to build Front-End for websites. 
+                This is my Personal Portfolio Website I built to showcase my skills. Scroll down to know more about me.
+            </p>
+        </StyledHeroSection>
       
     )
   }
 }
 
-export default About
+export default Hero

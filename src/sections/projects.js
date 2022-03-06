@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import styled from 'styled-components'
 
 const StyledProjectSection = styled.section`
-    /* max-width: 900px; */
+     margin: 10em auto;
 `;
 
 
@@ -30,6 +30,7 @@ const StyledText = styled.div`
 const StyledCardComponent = styled.div`
     .cardComponent{
         transition: var(--transition);
+        margin-bottom: 2em;
     }
     .projectDesc{
         font-weight: 400;

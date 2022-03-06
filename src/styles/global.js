@@ -31,8 +31,9 @@ body {
   }
 
 .StyledSection{
-    margin: 2em;
-    max-width: 600px;
+    margin-right: 2em;
+    margin-left: 2em;
+    max-width: 320px;
 }
 
 .cardComponent{
@@ -85,6 +86,9 @@ p{
     margin: 0px 0px 1.25em 0px;
     display: block;
     color: var(--white);
+    font-weight: 400;
+    font-family: var(--font-mono);
+    line-height: 1.1;
 }
 .projectSource{
     font-size: small;

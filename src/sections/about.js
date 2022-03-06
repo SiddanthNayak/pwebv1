@@ -2,8 +2,7 @@ import React, { Component } from 'react'
 import styled from 'styled-components'
 
 const StyledAboutSection = styled.section`
-    max-width: 900px;
-    /* margin: 0 auto; */
+    margin: 10em 0em;
 `;
 
 const StyledText = styled.div`
