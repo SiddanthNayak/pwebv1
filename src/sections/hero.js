@@ -24,7 +24,7 @@ class Hero extends Component {
         <StyledHeroSection id="heroSection" className='StyledSection'>
             <p className='intro'>Hi, my name is</p>
             <h1 className = "hero">Siddanth Nayak</h1>
-            <p>I am a Computer Science Engineering Gradtuate and I like to build Front-End for websites. 
+            <p>I am a Computer Science Engineering Graduate and I like to build Front-End for websites. 
                 This is my Personal Portfolio Website I built to showcase my skills. Scroll down to know more about me.
             </p>
         </StyledHeroSection>
