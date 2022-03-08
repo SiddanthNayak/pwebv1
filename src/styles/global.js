@@ -31,8 +31,11 @@ body {
   }
 
 .StyledSection{
-    margin-right: 2em;
-    margin-left: 2em;
+    /* margin-right: 2em;
+    margin-left: 2em; */
+    scroll-behavior: smooth;
+    transition: var(--transition);
+    overflow-y: scroll;
     max-width: 320px;
 }
 

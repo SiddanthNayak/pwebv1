@@ -6,13 +6,16 @@ import About from './sections/about';
 import Projects from './sections/projects';
 import Contact from './sections/contact';
 import Hero from './sections/hero';
+import Burger from './components/burger';
 
 function App() {
+  const [open, setOpen] = React.useState(false);
   return (
     <div className="App">
       <GlobalStyle />
       <nav>
-        <Nav />
+        <Burger open={open} setOpen={setOpen} />
+        <Nav open={open} setOpen={setOpen} />
       </nav>
       <main>
         <Hero />

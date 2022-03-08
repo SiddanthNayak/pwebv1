@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 const StyledHeroSection = styled.section`
 
-    margin: 10em 2em;
+    margin: 0em auto;
     
     h1{
         margin-top: .25em;
