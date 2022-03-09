@@ -22,7 +22,7 @@ const StyledPic = styled.div`
     width: 200px;
     height: 200px;
 }
-    @media (min-width: 4000px){
+    @media (min-width: 1200px){
         width: 300px;
         height: 300px;
     }

@@ -8,30 +8,42 @@ import {bool} from 'prop-types';
 const Styled = styled.div`
     background-color: var(--navy);
     display: flex;
-    flex-direction: column;
     align-items: center;
+    justify-content: flex-end;
     margin: 0em 0em 3em 0em;
-    box-shadow: 0em 0.5em 1em var(--dark-navy);
     width: 100vw;
     height: 100%;
     color: var(--white);
-    transform: ${({open}) => open? 'translateY(100)' : 'translateY(-120%)'};
-    transition: var(--transition);
+    @media (max-width: 1200px){
+        transform: ${({open}) => open? 'translateY(100)' : 'translateY(-120%)'};
+        transition: var(--transition);
+        box-shadow: 0em 0.5em 1em var(--dark-navy);
+        flex-direction: column;
+    }
     overflow: hidden;
     position: relative;
 
     ol{
-        color: var(--green);
+        /* color: var(--green); */
         margin: 0em;
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
+
+        @media (max-width: 1200px){
+            flex-direction: column;
+            align-items: center;
+        }
+        @media (min-width: 1200px){
+            list-style-type: none;
+        }
+        
 
     }
     li{
         color: var(--white);
         padding: 1em 0em;
+        @media (min-width: 1200px){
+            padding: 0em 2em;
+        }
     }
     .resume{
 
@@ -45,6 +57,9 @@ const Styled = styled.div`
         background-color: var(--navy);
         border-radius: var(--border-radius);
         cursor: pointer;
+        @media (min-width: 1200px){
+            margin-right: 2em;
+        }
     }
     .resume:hover{
         background-color: var(--green-tint);

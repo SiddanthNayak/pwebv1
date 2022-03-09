@@ -22,12 +22,14 @@ body {
     color: var(--slate);
     display: flex;
     font-family: var(--font-mono);
-    font-size: 14px;
-    /* height: 100vh; */
+    height: 100%;
     justify-content: center;
     text-rendering: optimizeLegibility;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
+    @media (max-width: 1200px){
+      font-size: 14px;
+    }
   }
 
 .StyledSection{
@@ -36,7 +38,12 @@ body {
     scroll-behavior: smooth;
     transition: var(--transition);
     overflow-y: scroll;
-    max-width: 320px;
+    height: 100%;
+    max-width: 900px;
+    @media(max-width: 1200px){
+      max-width: 320px;
+    }
+    
 }
 
 .cardComponent{
