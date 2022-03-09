@@ -12,10 +12,11 @@ const StyledText = styled.div`
 
     h2{
         margin-top: 0em;
-        text-align: center;
     }
+    
     .cta{
         border: 0.5px solid var(--green);
+        text-align: center;
         color: var(--green);
         padding: 1em 2em;
         font-weight: 400;

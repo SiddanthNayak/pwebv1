@@ -7,6 +7,7 @@ import Projects from './sections/projects';
 import Contact from './sections/contact';
 import Hero from './sections/hero';
 import Burger from './components/burger';
+import Footer from './sections/footer';
 
 function App() {
   const [open, setOpen] = React.useState(false);
@@ -23,6 +24,9 @@ function App() {
         <Projects />
         <Contact />
       </main>
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 }

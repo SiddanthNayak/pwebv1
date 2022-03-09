@@ -1,8 +1,18 @@
-import React, { Component } from 'react'
-import styled from 'styled-components'
+import React, { Component } from 'react';
+import styled from 'styled-components';
+import IconExternal from '../components/icons/external';
+import IconGitHub from '../components/icons/github';
+import IconFolder from '../components/icons/folder';
+
 
 const StyledProjectSection = styled.section`
      margin: 10em auto;
+     svg{
+         color: var(--green);
+         margin-bottom: 1em;
+         width: 40px;
+         height: 40px;
+     }
 `;
 
 
@@ -29,14 +39,57 @@ const StyledText = styled.div`
 
 const StyledCardComponent = styled.div`
 
+    
     @media (min-width: 1200px){
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-column-gap: 2em;
     }
+
+    .linkGit{
+        position: relative;
+        left: 70%;
+        bottom: 3%;
+        svg{
+            color: var(--slate);
+            width: 25px;
+            height: 25px;
+        }
+        svg:hover{
+            color: var(--green);
+        }
+    }
+    .linkExternal{
+        position: relative;
+        left: 73%;
+        bottom: 3%;
+        svg{
+            color: var(--slate);
+            width: 25px;
+            height: 25px;
+        }
+        svg:hover{
+            color: var(--green);
+        }
+    }
+    h3{
+        margin-bottom: 1em;
+        font-size: var(--fz-xxl);
+        color: var(--lightest-slate);
+    }
     .cardComponent{
         transition: var(--transition);
         margin-bottom: 2em;
+    }
+
+    .cardComponent:hover{
+        /* cursor: pointer; */
+        box-shadow: 0 10px 30px -15px var(--navy-shadow);
+        transform: translateY(-7px);
+        cursor: pointer;
+        h3{
+          color: var(--green);
+        }
     }
     .projectDesc{
         font-weight: 400;
@@ -62,45 +115,45 @@ class Projects extends Component {
             </StyledText>
             <StyledCardComponent>
                 <div className = 'cardComponent'>
+                    <IconFolder className="folder"></IconFolder>
+                    <a className="linkGit" href='https://github.com/SiddanthNayak/FourCardFeature' target='_blank' rel='noreferrer'><IconGitHub/></a>
+                    <a className="linkExternal" href='https://vigilant-bhabha-f67b04.netlify.app' target='_blank' rel='noreferrer'><IconExternal/></a>
                     <h3 className = "projectTitle">
-                        <a href="https://vigilant-bhabha-f67b04.netlify.app" rel ='noopener noreferrer'  target = '_blank'> Four Card Feature </a>
+                         Four Card Feature
                     </h3>
-                    <p className='projectSource'>
-                        <a href="https://www.frontendmentor.io/challenges/four-card-feature-section-weK1eFYK" rel ='noopener noreferrer' target='_blank'>FrontEndMentor Challenge</a>
-                    </p>
                     <p className="projectDesc">
                         FrontEnd Mentor Challenge featuring a static one-page responsive website containing four cardes developed using CSS Flexbox.
                     </p>
                 </div>
                 <div className ='cardComponent'>
+                    <IconFolder className="folder"></IconFolder>
+                    <a className="linkGit" href='https://github.com/SiddanthNayak/NFT-Preview-Card' target='_blank' rel='noreferrer'><IconGitHub/></a>
+                    <a className="linkExternal" href='https://vigorous-lumiere-fb16ca.netlify.app' target='_blank' rel='noreferrer'><IconExternal/></a>
                     <h3 className = "projectTitle">
-                        <a href="https://vigorous-lumiere-fb16ca.netlify.app" rel ='noopener noreferrer'  target = '_blank'> NFT Card Component</a>
+                        NFT Card Component
                     </h3>
-                    <p className='projectSource'>
-                        <a href="https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U"  rel ='noopener noreferrer'  target = '_blank'>FrontEndMentor Challenge</a>
-                    </p>
                     <p className="projectDesc">
                         FrontEnd Mentor Challenge featuring a static one-page responsive website containing a NFT preview component card built using CSS Flexbox.
                     </p>
                 </div>
                 <div className ='cardComponent'>
+                    <IconFolder className="folder"></IconFolder>
+                    <a className="linkGit" href='https://github.com/SiddanthNayak/Stats-Preview-Card' target='_blank' rel='noreferrer'><IconGitHub/></a>
+                    <a className="linkExternal" href='https://agitated-bassi-f13d3b.netlify.app' target='_blank' rel='noreferrer'><IconExternal/></a>
                     <h3 className = "projectTitle">
-                        <a href="https://agitated-bassi-f13d3b.netlify.app" rel ='noopener noreferrer'  target = '_blank'>Stats Preview Component</a>
+                        Stats Preview Component
                     </h3>
-                    <p className='projectSource'>
-                        <a href="https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62"  rel ='noopener noreferrer'  target = '_blank'>FrontEndMentor Challenge</a>
-                    </p>
                     <p className="projectDesc">
                         FrontEnd Mentor Challenge featuring a static one-page responsive website containing a stats preview card component built using CSS Flexbox.
                     </p>
                 </div>
                 <div className ='cardComponent'>
+                    <IconFolder className="folder"></IconFolder>
+                    <a className="linkGit" href='https://github.com/SiddanthNayak/Tip-Calculator' target='_blank' rel='noreferrer'><IconGitHub/></a>
+                    <a className="linkExternal" href='https://optimistic-galileo-8025a9.netlify.app' target='_blank' rel='noreferrer'><IconExternal/></a>
                     <h3 className = "projectTitle">
-                        <a href="https://optimistic-galileo-8025a9.netlify.app" rel ='noopener noreferrer'  target = '_blank'>Tip Calculator App</a>
+                        Tip Calculator App
                     </h3>
-                    <p className='projectSource'>
-                        <a href="https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX"  rel ='noopener noreferrer'  target = '_blank'>FrontEndMentor Challenge</a>
-                    </p>
                     <p className="projectDesc">
                         FrontEnd Mentor Challenge featuring a responsive website app to calculate tip and total bill amount based on bill, tip percentage and number of people as input.
                     </p>

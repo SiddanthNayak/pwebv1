@@ -22,6 +22,7 @@ body {
     color: var(--slate);
     display: flex;
     font-family: var(--font-mono);
+    line-height: 1.3;
     height: 100%;
     justify-content: center;
     text-rendering: optimizeLegibility;
@@ -53,15 +54,11 @@ body {
     margin: 0em auto 1em auto;
     padding: 1em 2em;
     border-radius: var(--border-radius);
+
     @media (max-width: 1200px){
       max-width: 320px;
     }
 }
-.cardComponent:hover{
-        cursor: pointer;
-        box-shadow: 0 10px 30px -15px var(--navy-shadow);
-        transform: translateY(-7px);
-    }
 .projectTitle{
     margin:0;
     font-size: large;
@@ -104,7 +101,7 @@ p{
     color: var(--white);
     font-weight: 400;
     font-family: var(--font-mono);
-    line-height: 1.1;
+    line-height: 1.3;
 }
 .projectSource{
     font-size: small;
