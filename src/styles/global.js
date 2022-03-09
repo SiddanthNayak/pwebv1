@@ -30,6 +30,7 @@ body {
     @media (max-width: 1200px){
       font-size: 14px;
     }
+    overflow-x: hidden;
   }
 
 .StyledSection{
@@ -37,9 +38,9 @@ body {
     margin-left: 2em; */
     scroll-behavior: smooth;
     transition: var(--transition);
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
     height: 100%;
-    max-width: 900px;
+    max-width: 850px;
     @media(max-width: 1200px){
       max-width: 320px;
     }
@@ -51,8 +52,10 @@ body {
     background-color: var(--light-navy);
     margin: 0em auto 1em auto;
     padding: 1em 2em;
-    max-width: 320px;
     border-radius: var(--border-radius);
+    @media (max-width: 1200px){
+      max-width: 320px;
+    }
 }
 .cardComponent:hover{
         cursor: pointer;
@@ -81,7 +84,7 @@ body {
       margin-left: 20px;
       background-color: var(--lightest-navy);
 
-      @media (max-width: 1080px) {
+      @media (max-width: 1200px) {
         width: 200px;
       }
       @media (max-width: 768px) {
@@ -89,6 +92,9 @@ body {
       }
       @media (max-width: 600px) {
         margin-left: 10px;
+      }
+      @media (min-width: 1200px){
+        width: 700px;
       }
     }
   }

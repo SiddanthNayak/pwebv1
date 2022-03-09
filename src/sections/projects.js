@@ -28,6 +28,12 @@ const StyledText = styled.div`
 `;
 
 const StyledCardComponent = styled.div`
+
+    @media (min-width: 1200px){
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 2em;
+    }
     .cardComponent{
         transition: var(--transition);
         margin-bottom: 2em;
